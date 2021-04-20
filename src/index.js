@@ -1,3 +1,5 @@
+import './style.css';
+
 const locationName = document.getElementById('weatherName');
 
 const getWeather = async () => {
