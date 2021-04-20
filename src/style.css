@@ -8,6 +8,18 @@
   margin: 0;
 }
 
+.name {
+  font-size: 5rem;
+  color: white;
+}
+
+.temp {
+  float: right;
+  font-size: 10rem;
+  font-weight: 200;
+  color: white;
+}
+
 .container {
   margin-top: 40px;
   padding: 20px;
