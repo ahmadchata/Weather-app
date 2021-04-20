@@ -1,1 +1,1 @@
-(async()=>{const a=await fetch("http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=8c2cf7df09a32e8715f1725a828b777b"),o=await a.json();console.log(o)})();
+(()=>{const e=document.getElementById("weatherName");(async()=>{const t=await fetch("http://api.openweathermap.org/data/2.5/weather?q=Bida&APPID=8c2cf7df09a32e8715f1725a828b777b",{mode:"cors"}),a=await t.json();e.textContent=a.name,console.log(a)})()})();
