@@ -13,9 +13,17 @@
   color: white;
 }
 
+.flag, .description {
+  font-size: 3rem;
+}
+
+.description {
+  font-weight: 200;
+}
+
 .temp {
   float: right;
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: 200;
   color: white;
 }
