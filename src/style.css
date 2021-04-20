@@ -13,7 +13,8 @@
   color: white;
 }
 
-.flag, .description {
+.flag,
+.description {
   font-size: 3rem;
 }
 
@@ -31,12 +32,12 @@
 .container {
   margin-top: 40px;
   padding: 20px;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255, 255, 255, 0.4);
   height: 400px;
   width: 640px;
   border-radius: 30px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 body {
