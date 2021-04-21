@@ -9,7 +9,7 @@ const locationdesc = document.querySelector('.description');
 const myForm = document.querySelector('form');
 
 const getWeather = async (location) => {
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=8c2cf7df09a32e8715f1725a828b777b`, { mode: 'cors' });
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=8c2cf7df09a32e8715f1725a828b777b`, { mode: 'cors' });
   const responseData = await response.json();
   locationName.textContent = responseData.name;
   locationName.classList.add('name');
