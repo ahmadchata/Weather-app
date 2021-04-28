@@ -43,14 +43,12 @@ const handleSubmit = (e) => {
 };
 
 const convertTempFah = () => {
-  console.log(locationWeather.textContent);
   const fah = Math.round((locationWeather.textContent * 9) / 5 + 32);
   locationWeather.textContent = fah;
   celsius = false;
 };
 
 const convertTempCelsius = () => {
-  console.log(locationWeather.textContent);
   const cel = Math.round(((locationWeather.textContent - 32) * 5) / 9);
   locationWeather.textContent = cel;
   celsius = true;
