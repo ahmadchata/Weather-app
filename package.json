@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
+    "serve": "webpack serve",
     "watch": "webpack --watch"
   },
   "repository": {
@@ -31,7 +32,8 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.19.0",
     "webpack": "^5.33.2",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "country-code-emoji": "^2.2.0"
