@@ -8,7 +8,6 @@ const locationFlag = document.getElementById("weatherFlag");
 const locationdesc = document.querySelector(".description");
 const myForm = document.querySelector("form");
 const tempButton = document.getElementById("tempConversion");
-const image = document.querySelector(".weatherImage");
 
 var celsius = true;
 
@@ -26,7 +25,7 @@ const getWeather = async (location) => {
     locationdesc.textContent = responseData.weather[0].description;
     const imageResponse = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=i2fk28gV21A2hFxjWROYXpSlxj1vncHx&s=${locationdesc.textContent}`, {mode: "cors"});
     const imageData = await imageResponse.json();
-    image.src = imageData.data.images.original.url;
+    document.body.style.backgroundImage = `url(${imageData.data.images.original.url})`;
     myForm.reset();
   } catch (e) {
     locationdesc.textContent = "Location not found";
