@@ -35,7 +35,7 @@
   background: rgba(112, 106, 106, 0.3);
   height: 400px;
   width: 640px;
-  border-radius: 30px;
+  border-radius: 25px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
