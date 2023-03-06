@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-  <title>Weather App</title>
-</head>
-<body>
-  <main>
-    <div class="container">
-      <form class="form-inline">
-        <div class="form-group my-2">
-          <label for="citysearch" class="sr-only"></label>
-          <input type="text" class="form-control" id="citySearch" placeholder="Search a city">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form class="form-inline">
+          <div class="form-group my-2">
+            <label for="citysearch" class="sr-only"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="citySearch"
+              placeholder="Search a city"
+            />
+          </div>
+          <button id="submit" type="submit" class="btn btn-primary my-2 ml-2">
+            Search
+          </button>
+        </form>
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="tempConversion"
+          />
+          <label class="custom-control-label" for="tempConversion"
+            >Fahrenheit</label
+          >
         </div>
-        <button id="submit" type="submit" class="btn btn-primary my-2">Search</button>
-      </form>
-      <div class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="tempConversion">
-        <label class="custom-control-label" for="tempConversion">Fahrenheit</label>
+        <div>
+          <span id="weatherName"></span>
+          <span class="flag" id="weatherFlag"></span>
+          <span class="ml-3 description"></span>
+          <span class="temp" id="weatherTemp"></span>
+        </div>
       </div>
-      <div>
-        <span id="weatherName"></span>
-        <span class="flag" id="weatherFlag"></span>
-        <span class="ml-3 description"></span>
-        <span class="temp" id="weatherTemp"></span>
-      </div>
-    </div>
-  </main>
+    </main>
 
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
